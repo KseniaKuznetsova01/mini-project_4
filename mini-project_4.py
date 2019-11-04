@@ -1,5 +1,6 @@
-print(lc.HI)
+# Игра, в которой игрок угадывает слова по вопросам, либо один игрок загадывает слово, а другой должен его отгадать.
 import local as lc
+print(lc.HI)
 print(lc.N)
 d = int(input())
 m = 0
@@ -39,8 +40,10 @@ if d == 1:
 else:
     print(lc.S)
     s = input()
+f = s
 s = s.lower()
 a = len(s)
+
 s1 = '_ ' * a
 print(s1)
 r = ' '
@@ -67,8 +70,8 @@ while osh <= 5 and m != a:
         osh += 1
         print(6-osh)
 
-if osh != 5:
+if osh != 5 and osh < 5:
     print(lc.KON)
 else:
     print(lc.FAIL)
-    print(s)
+    print(f)

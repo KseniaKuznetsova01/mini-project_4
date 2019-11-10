@@ -2,9 +2,9 @@
 import local as lc
 print(lc.HI)
 print(lc.N)
-d = int(input())
+d = int(input())                                               # Select number of players
 m = 0
-if d == 1:
+if d == 1:                                                     # Select number of question
     print(lc.F)
     f = int(input())
     if f == 1:
@@ -70,7 +70,7 @@ while osh <= 5 and m != a:
         osh += 1
         print(6-osh)
 
-if osh != 5 and osh < 5:
+if osh <= 5:
     print(lc.KON)
 else:
     print(lc.FAIL)

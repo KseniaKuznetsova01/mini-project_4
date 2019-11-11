@@ -2,9 +2,9 @@
 import local as lc
 print(lc.HI)
 print(lc.N)
-d = int(input())                                               # Select number of players
+players = int(input())                                               # Select number of players
 m = 0
-if d == 1:                                                     # Select number of question
+if players == 1:                                                     # Select number of question
     print(lc.F)
     f = int(input())
     if f == 1:
@@ -50,10 +50,10 @@ r = ' '
 osh = 1
 print(lc.OSH)
 print(lc.OTG)
-while osh <= 5 and m != a:
+while osh <= 5 and m != a:                                                # Number of mistakes
     print(lc.B)
     b = input()
-    bc = s.find(b)
+    bc = s.find(b)                                                        # Find letter
     if bc != -1:
         print(lc.U)
         c = bc * 2
